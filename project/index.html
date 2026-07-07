@@ -3,6 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <title>vezbam html pocetci</title>
+    <link rel="stylesheet" href="/project/style.css" />
   </head>
   <body>
     <!-- This is a simple HTML 
@@ -13,7 +14,7 @@
     <h5>h5 header</h5>
     <h6>h6 header</h6>
 page -->
-    <header>
+    <header class="main-header">
       <h1>📘 The Code Magazine</h1>
 
       <nav>
@@ -30,7 +31,9 @@ page -->
 
         <img src="/project/img/laura-jones.jpg" alt="author_photo" />
 
-        <p>Posted by <strong>Laura Jones</strong> on Monday, June 21st 2027</p>
+        <p id="author">
+          Posted by <strong>Laura Jones</strong> on Monday, June 21st 2027
+        </p>
 
         <img
           src="/project/img/post-img.jpg"
@@ -76,7 +79,7 @@ page -->
 
       <p>
         You can learn more at
-        <a href="https://developer.mozilla.org/en-US/">MDN Docs</a>
+        <a href="https://www.typescriptlang.org/docs/">MDN Docs</a>
       </p>
 
       <h3>Why should you learn HTML??</h3>
@@ -101,7 +104,7 @@ page -->
       </p>
     </article>
     <aside>
-      <ul>
+      <ul class="relate-posts-list">
         <li>
           <img
             src="/project/img/related-1.jpg"
@@ -110,7 +113,7 @@ page -->
             height="75px"
           />
           <a href="#">How to learn web development</a>
-          <p>By Jonnas</p>
+          <p class="relate-author">By Jonnas</p>
         </li>
         <li>
           <img
@@ -120,7 +123,7 @@ page -->
             height="75px"
           />
           <a href="#">The unknown poweers of CSS</a>
-          <p>By Jim Dillon</p>
+          <p class="relate-author">By Jim Dillon</p>
         </li>
         <li>
           <img
@@ -130,11 +133,13 @@ page -->
             height="75px"
           />
           <a href="#"> Why JavaScript is Awsome</a>
-          <p>By Matilda</p>
+          <p class="relate-author">By Matilda</p>
         </li>
       </ul>
     </aside>
 
-    <footer>Copyright &copy; 2027 by the CodeMagazine</footer>
+    <footer>
+      <p id="copright">Copyright &copy; 2027 by the CodeMagazine</p>
+    </footer>
   </body>
 </html>
